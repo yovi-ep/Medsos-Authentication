@@ -15,6 +15,20 @@
 		97C128CF247111DE00386E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C128CD247111DE00386E29 /* LaunchScreen.storyboard */; };
 		97C128DA247111DE00386E29 /* medsos_authenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128D9247111DE00386E29 /* medsos_authenticationTests.swift */; };
 		97C128E5247111DE00386E29 /* medsos_authenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128E4247111DE00386E29 /* medsos_authenticationUITests.swift */; };
+		97C12910247112B600386E29 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128F7247112B500386E29 /* BaseViewController.swift */; };
+		97C12911247112B600386E29 /* FontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128F8247112B500386E29 /* FontConfig.swift */; };
+		97C12913247112B600386E29 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128FA247112B500386E29 /* BaseCollectionViewCell.swift */; };
+		97C12915247112B600386E29 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128FC247112B600386E29 /* BaseService.swift */; };
+		97C12916247112B600386E29 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128FD247112B600386E29 /* BaseTableView.swift */; };
+		97C12917247112B600386E29 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12901247112B600386E29 /* UIViewExt.swift */; };
+		97C12918247112B600386E29 /* UITableViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12902247112B600386E29 /* UITableViewCellExt.swift */; };
+		97C12919247112B600386E29 /* UICollectionViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12903247112B600386E29 /* UICollectionViewCellExt.swift */; };
+		97C1291A247112B600386E29 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12904247112B600386E29 /* UIImageViewExt.swift */; };
+		97C1291C247112B600386E29 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12908247112B600386E29 /* AlertBuilder.swift */; };
+		97C1291D247112B600386E29 /* LoaderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12909247112B600386E29 /* LoaderState.swift */; };
+		97C1291E247112B600386E29 /* XIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1290A247112B600386E29 /* XIBView.swift */; };
+		97C1291F247112B600386E29 /* LoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1290B247112B600386E29 /* LoaderVC.swift */; };
+		97C12921247112B600386E29 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1290F247112B600386E29 /* BuildConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +63,20 @@
 		97C128E0247111DE00386E29 /* medsos_authenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medsos_authenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C128E4247111DE00386E29 /* medsos_authenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medsos_authenticationUITests.swift; sourceTree = "<group>"; };
 		97C128E6247111DE00386E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97C128F7247112B500386E29 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		97C128F8247112B500386E29 /* FontConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConfig.swift; sourceTree = "<group>"; };
+		97C128FA247112B500386E29 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		97C128FC247112B600386E29 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		97C128FD247112B600386E29 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		97C12901247112B600386E29 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		97C12902247112B600386E29 /* UITableViewCellExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExt.swift; sourceTree = "<group>"; };
+		97C12903247112B600386E29 /* UICollectionViewCellExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExt.swift; sourceTree = "<group>"; };
+		97C12904247112B600386E29 /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExt.swift; sourceTree = "<group>"; };
+		97C12908247112B600386E29 /* AlertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
+		97C12909247112B600386E29 /* LoaderState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderState.swift; sourceTree = "<group>"; };
+		97C1290A247112B600386E29 /* XIBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBView.swift; sourceTree = "<group>"; };
+		97C1290B247112B600386E29 /* LoaderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderVC.swift; sourceTree = "<group>"; };
+		97C1290F247112B600386E29 /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +127,9 @@
 		97C128C1247111D900386E29 /* medsos_authentication */ = {
 			isa = PBXGroup;
 			children = (
-				97C128C2247111D900386E29 /* AppDelegate.swift */,
-				97C128C4247111D900386E29 /* SceneDelegate.swift */,
-				97C128C6247111D900386E29 /* ViewController.swift */,
-				97C128C8247111D900386E29 /* Main.storyboard */,
-				97C128CB247111DE00386E29 /* Assets.xcassets */,
-				97C128CD247111DE00386E29 /* LaunchScreen.storyboard */,
-				97C128D0247111DE00386E29 /* Info.plist */,
+				97C128F22471120C00386E29 /* Core */,
+				97C128F32471121500386E29 /* Features */,
+				97C128F42471121900386E29 /* Resources */,
 			);
 			path = medsos_authentication;
 			sourceTree = "<group>";
@@ -126,6 +150,97 @@
 				97C128E6247111DE00386E29 /* Info.plist */,
 			);
 			path = medsos_authenticationUITests;
+			sourceTree = "<group>";
+		};
+		97C128F22471120C00386E29 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				97C128F6247112B500386E29 /* Base */,
+				97C12923247112E900386E29 /* Config */,
+				97C128FE247112B600386E29 /* Utilities */,
+				97C1290F247112B600386E29 /* BuildConfig.swift */,
+				97C128C2247111D900386E29 /* AppDelegate.swift */,
+				97C128C4247111D900386E29 /* SceneDelegate.swift */,
+				97C128CD247111DE00386E29 /* LaunchScreen.storyboard */,
+				97C128D0247111DE00386E29 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		97C128F32471121500386E29 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				97C128C6247111D900386E29 /* ViewController.swift */,
+				97C128C8247111D900386E29 /* Main.storyboard */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		97C128F42471121900386E29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97C128CB247111DE00386E29 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		97C128F6247112B500386E29 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				97C128F7247112B500386E29 /* BaseViewController.swift */,
+				97C128F8247112B500386E29 /* FontConfig.swift */,
+				97C128FA247112B500386E29 /* BaseCollectionViewCell.swift */,
+				97C128FC247112B600386E29 /* BaseService.swift */,
+				97C128FD247112B600386E29 /* BaseTableView.swift */,
+			);
+			name = Base;
+			path = Base/Base;
+			sourceTree = "<group>";
+		};
+		97C128FE247112B600386E29 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				97C128FF247112B600386E29 /* Extensions */,
+				97C12907247112B600386E29 /* View */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		97C128FF247112B600386E29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97C12900247112B600386E29 /* View */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		97C12900247112B600386E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97C12901247112B600386E29 /* UIViewExt.swift */,
+				97C12902247112B600386E29 /* UITableViewCellExt.swift */,
+				97C12903247112B600386E29 /* UICollectionViewCellExt.swift */,
+				97C12904247112B600386E29 /* UIImageViewExt.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		97C12907247112B600386E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97C12908247112B600386E29 /* AlertBuilder.swift */,
+				97C12909247112B600386E29 /* LoaderState.swift */,
+				97C1290A247112B600386E29 /* XIBView.swift */,
+				97C1290B247112B600386E29 /* LoaderVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		97C12923247112E900386E29 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +374,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C12921247112B600386E29 /* BuildConfig.swift in Sources */,
+				97C1291A247112B600386E29 /* UIImageViewExt.swift in Sources */,
+				97C1291D247112B600386E29 /* LoaderState.swift in Sources */,
+				97C1291F247112B600386E29 /* LoaderVC.swift in Sources */,
 				97C128C7247111D900386E29 /* ViewController.swift in Sources */,
+				97C12913247112B600386E29 /* BaseCollectionViewCell.swift in Sources */,
+				97C12910247112B600386E29 /* BaseViewController.swift in Sources */,
+				97C12911247112B600386E29 /* FontConfig.swift in Sources */,
+				97C12916247112B600386E29 /* BaseTableView.swift in Sources */,
+				97C12919247112B600386E29 /* UICollectionViewCellExt.swift in Sources */,
+				97C1291E247112B600386E29 /* XIBView.swift in Sources */,
+				97C12918247112B600386E29 /* UITableViewCellExt.swift in Sources */,
+				97C12917247112B600386E29 /* UIViewExt.swift in Sources */,
 				97C128C3247111D900386E29 /* AppDelegate.swift in Sources */,
+				97C1291C247112B600386E29 /* AlertBuilder.swift in Sources */,
 				97C128C5247111D900386E29 /* SceneDelegate.swift in Sources */,
+				97C12915247112B600386E29 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = medsos_authentication/Info.plist;
+				INFOPLIST_FILE = medsos_authentication/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,7 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authentication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,7 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = medsos_authentication/Info.plist;
+				INFOPLIST_FILE = medsos_authentication/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +589,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authentication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
