@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97C128C3247111D900386E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128C2247111D900386E29 /* AppDelegate.swift */; };
+		97C128C5247111D900386E29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128C4247111D900386E29 /* SceneDelegate.swift */; };
+		97C128C7247111D900386E29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128C6247111D900386E29 /* ViewController.swift */; };
+		97C128CA247111D900386E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C128C8247111D900386E29 /* Main.storyboard */; };
+		97C128CC247111DE00386E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C128CB247111DE00386E29 /* Assets.xcassets */; };
+		97C128CF247111DE00386E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C128CD247111DE00386E29 /* LaunchScreen.storyboard */; };
+		97C128DA247111DE00386E29 /* medsos_authenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128D9247111DE00386E29 /* medsos_authenticationTests.swift */; };
+		97C128E5247111DE00386E29 /* medsos_authenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128E4247111DE00386E29 /* medsos_authenticationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97C128D6247111DE00386E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C128B7247111D900386E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97C128BE247111D900386E29;
+			remoteInfo = medsos_authentication;
+		};
+		97C128E1247111DE00386E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C128B7247111D900386E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97C128BE247111D900386E29;
+			remoteInfo = medsos_authentication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97C128BF247111D900386E29 /* medsos_authentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medsos_authentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C128C2247111D900386E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97C128C4247111D900386E29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		97C128C6247111D900386E29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97C128C9247111D900386E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97C128CB247111DE00386E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97C128CE247111DE00386E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97C128D0247111DE00386E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97C128D5247111DE00386E29 /* medsos_authenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medsos_authenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C128D9247111DE00386E29 /* medsos_authenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medsos_authenticationTests.swift; sourceTree = "<group>"; };
+		97C128DB247111DE00386E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97C128E0247111DE00386E29 /* medsos_authenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medsos_authenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C128E4247111DE00386E29 /* medsos_authenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medsos_authenticationUITests.swift; sourceTree = "<group>"; };
+		97C128E6247111DE00386E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97C128BC247111D900386E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C128D2247111DE00386E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C128DD247111DE00386E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97C128B6247111D900386E29 = {
+			isa = PBXGroup;
+			children = (
+				97C128C1247111D900386E29 /* medsos_authentication */,
+				97C128D8247111DE00386E29 /* medsos_authenticationTests */,
+				97C128E3247111DE00386E29 /* medsos_authenticationUITests */,
+				97C128C0247111D900386E29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97C128C0247111D900386E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97C128BF247111D900386E29 /* medsos_authentication.app */,
+				97C128D5247111DE00386E29 /* medsos_authenticationTests.xctest */,
+				97C128E0247111DE00386E29 /* medsos_authenticationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C128C1247111D900386E29 /* medsos_authentication */ = {
+			isa = PBXGroup;
+			children = (
+				97C128C2247111D900386E29 /* AppDelegate.swift */,
+				97C128C4247111D900386E29 /* SceneDelegate.swift */,
+				97C128C6247111D900386E29 /* ViewController.swift */,
+				97C128C8247111D900386E29 /* Main.storyboard */,
+				97C128CB247111DE00386E29 /* Assets.xcassets */,
+				97C128CD247111DE00386E29 /* LaunchScreen.storyboard */,
+				97C128D0247111DE00386E29 /* Info.plist */,
+			);
+			path = medsos_authentication;
+			sourceTree = "<group>";
+		};
+		97C128D8247111DE00386E29 /* medsos_authenticationTests */ = {
+			isa = PBXGroup;
+			children = (
+				97C128D9247111DE00386E29 /* medsos_authenticationTests.swift */,
+				97C128DB247111DE00386E29 /* Info.plist */,
+			);
+			path = medsos_authenticationTests;
+			sourceTree = "<group>";
+		};
+		97C128E3247111DE00386E29 /* medsos_authenticationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97C128E4247111DE00386E29 /* medsos_authenticationUITests.swift */,
+				97C128E6247111DE00386E29 /* Info.plist */,
+			);
+			path = medsos_authenticationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97C128BE247111D900386E29 /* medsos_authentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C128E9247111DE00386E29 /* Build configuration list for PBXNativeTarget "medsos_authentication" */;
+			buildPhases = (
+				97C128BB247111D900386E29 /* Sources */,
+				97C128BC247111D900386E29 /* Frameworks */,
+				97C128BD247111D900386E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = medsos_authentication;
+			productName = medsos_authentication;
+			productReference = 97C128BF247111D900386E29 /* medsos_authentication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97C128D4247111DE00386E29 /* medsos_authenticationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C128EC247111DE00386E29 /* Build configuration list for PBXNativeTarget "medsos_authenticationTests" */;
+			buildPhases = (
+				97C128D1247111DE00386E29 /* Sources */,
+				97C128D2247111DE00386E29 /* Frameworks */,
+				97C128D3247111DE00386E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97C128D7247111DE00386E29 /* PBXTargetDependency */,
+			);
+			name = medsos_authenticationTests;
+			productName = medsos_authenticationTests;
+			productReference = 97C128D5247111DE00386E29 /* medsos_authenticationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97C128DF247111DE00386E29 /* medsos_authenticationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C128EF247111DE00386E29 /* Build configuration list for PBXNativeTarget "medsos_authenticationUITests" */;
+			buildPhases = (
+				97C128DC247111DE00386E29 /* Sources */,
+				97C128DD247111DE00386E29 /* Frameworks */,
+				97C128DE247111DE00386E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97C128E2247111DE00386E29 /* PBXTargetDependency */,
+			);
+			name = medsos_authenticationUITests;
+			productName = medsos_authenticationUITests;
+			productReference = 97C128E0247111DE00386E29 /* medsos_authenticationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97C128B7247111D900386E29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = gyosanila;
+				TargetAttributes = {
+					97C128BE247111D900386E29 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					97C128D4247111DE00386E29 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 97C128BE247111D900386E29;
+					};
+					97C128DF247111DE00386E29 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 97C128BE247111D900386E29;
+					};
+				};
+			};
+			buildConfigurationList = 97C128BA247111D900386E29 /* Build configuration list for PBXProject "medsos_authentication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97C128B6247111D900386E29;
+			productRefGroup = 97C128C0247111D900386E29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C128BE247111D900386E29 /* medsos_authentication */,
+				97C128D4247111DE00386E29 /* medsos_authenticationTests */,
+				97C128DF247111DE00386E29 /* medsos_authenticationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97C128BD247111D900386E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C128CF247111DE00386E29 /* LaunchScreen.storyboard in Resources */,
+				97C128CC247111DE00386E29 /* Assets.xcassets in Resources */,
+				97C128CA247111D900386E29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C128D3247111DE00386E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C128DE247111DE00386E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97C128BB247111D900386E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C128C7247111D900386E29 /* ViewController.swift in Sources */,
+				97C128C3247111D900386E29 /* AppDelegate.swift in Sources */,
+				97C128C5247111D900386E29 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C128D1247111DE00386E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C128DA247111DE00386E29 /* medsos_authenticationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C128DC247111DE00386E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C128E5247111DE00386E29 /* medsos_authenticationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97C128D7247111DE00386E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97C128BE247111D900386E29 /* medsos_authentication */;
+			targetProxy = 97C128D6247111DE00386E29 /* PBXContainerItemProxy */;
+		};
+		97C128E2247111DE00386E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97C128BE247111D900386E29 /* medsos_authentication */;
+			targetProxy = 97C128E1247111DE00386E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97C128C8247111D900386E29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C128C9247111D900386E29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97C128CD247111DE00386E29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C128CE247111DE00386E29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97C128E7247111DE00386E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97C128E8247111DE00386E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97C128EA247111DE00386E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medsos_authentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authentication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97C128EB247111DE00386E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medsos_authentication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authentication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97C128ED247111DE00386E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medsos_authenticationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authenticationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/medsos_authentication.app/medsos_authentication";
+			};
+			name = Debug;
+		};
+		97C128EE247111DE00386E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medsos_authenticationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authenticationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/medsos_authentication.app/medsos_authentication";
+			};
+			name = Release;
+		};
+		97C128F0247111DE00386E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medsos_authenticationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authenticationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = medsos_authentication;
+			};
+			name = Debug;
+		};
+		97C128F1247111DE00386E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medsos_authenticationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.medsos-authenticationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = medsos_authentication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97C128BA247111D900386E29 /* Build configuration list for PBXProject "medsos_authentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C128E7247111DE00386E29 /* Debug */,
+				97C128E8247111DE00386E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C128E9247111DE00386E29 /* Build configuration list for PBXNativeTarget "medsos_authentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C128EA247111DE00386E29 /* Debug */,
+				97C128EB247111DE00386E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C128EC247111DE00386E29 /* Build configuration list for PBXNativeTarget "medsos_authenticationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C128ED247111DE00386E29 /* Debug */,
+				97C128EE247111DE00386E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C128EF247111DE00386E29 /* Build configuration list for PBXNativeTarget "medsos_authenticationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C128F0247111DE00386E29 /* Debug */,
+				97C128F1247111DE00386E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97C128B7247111D900386E29 /* Project object */;
+}
