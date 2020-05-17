@@ -9,7 +9,7 @@
 import Foundation
 
 enum BuildConfig : String {
-    case none
+    case GoogleSignInClientID = "GOOGLE_SIGNIN_CLIENT_ID"
 }
 
 extension BuildConfig {

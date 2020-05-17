@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class AuthenticationViewController: UIViewController {
-    @IBOutlet weak var btGoogle: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func googleSignIn(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
     }
 }
