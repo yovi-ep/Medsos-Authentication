@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_medsos_authentication_medsos_authenticationUITests : NSObject
+@end
+@implementation PodsDummy_Pods_medsos_authentication_medsos_authenticationUITests
+@end

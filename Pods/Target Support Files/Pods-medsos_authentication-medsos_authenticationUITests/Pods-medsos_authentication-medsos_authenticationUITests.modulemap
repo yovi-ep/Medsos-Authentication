@@ -1,0 +1,6 @@
+framework module Pods_medsos_authentication_medsos_authenticationUITests {
+  umbrella header "Pods-medsos_authentication-medsos_authenticationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
