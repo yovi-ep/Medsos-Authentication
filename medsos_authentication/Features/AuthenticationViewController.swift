@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthenticationViewController.swift
 //  medsos_authentication
 //
 //  Created by yoviekaputra on 17/05/20.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class AuthenticationViewController: UIViewController {
+    @IBOutlet weak var btGoogle: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
