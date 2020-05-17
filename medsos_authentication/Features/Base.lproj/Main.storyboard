@@ -23,37 +23,75 @@
             </objects>
             <point key="canvasLocation" x="-1378" y="94"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Media Social Authentication-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="medsos_authentication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Medsos_Authentication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqo-nj-8AG">
-                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FiG-bz-XUt">
+                                <rect key="frame" x="30" y="716" width="354" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-th-a1b" customClass="AuthButton" customModule="Medsos_Authentication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="amS-va-Hnb"/>
+                                        </constraints>
+                                        <state key="normal" title="Google SignIn">
+                                            <color key="titleColor" red="0.97342996319999997" green="1" blue="0.9745467297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="googleSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cax-HG-3Md"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVm-fi-mDt" customClass="AuthButton" customModule="Medsos_Authentication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="66" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IgA-lo-3c5"/>
+                                        </constraints>
+                                        <state key="normal" title="Facebook Signin">
+                                            <color key="titleColor" red="0.97342996319999997" green="1" blue="0.9745467297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKs-DY-khy">
+                                <rect key="frame" x="30" y="240" width="354" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="85j-ud-t6Q">
+                                <rect key="frame" x="161" y="118" width="92" height="92"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="iAp-8r-2zv"/>
+                                    <constraint firstAttribute="width" constant="92" id="0gJ-0I-B1I"/>
+                                    <constraint firstAttribute="height" constant="92" id="Mnt-jM-FpR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Authentication">
-                                    <color key="titleColor" red="0.97342996319999997" green="1" blue="0.9745467297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnAuthentication:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOa-2A-RK9"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pqo-nj-8AG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Sp9-eb-5cD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pqo-nj-8AG" secondAttribute="trailing" constant="30" id="dh6-7a-jIX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pqo-nj-8AG" secondAttribute="bottom" constant="30" id="lP2-cI-c21"/>
+                            <constraint firstItem="85j-ud-t6Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="0kh-NC-hna"/>
+                            <constraint firstItem="FiG-bz-XUt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FKs-DY-khy" secondAttribute="bottom" constant="30" id="8LG-O8-IlK"/>
+                            <constraint firstItem="85j-ud-t6Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="B5n-HO-Zsh"/>
+                            <constraint firstItem="FKs-DY-khy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Bgd-mD-zwy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FiG-bz-XUt" secondAttribute="trailing" constant="30" id="K8b-EK-Kam"/>
+                            <constraint firstItem="FKs-DY-khy" firstAttribute="top" secondItem="85j-ud-t6Q" secondAttribute="bottom" constant="30" id="cSH-EL-q0Y"/>
+                            <constraint firstItem="FiG-bz-XUt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="ef0-jv-cdF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FKs-DY-khy" secondAttribute="trailing" constant="30" id="hfJ-a7-EZO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FiG-bz-XUt" secondAttribute="bottom" constant="30" id="onx-lH-WRF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rNK-Pz-IT5"/>
+                    <navigationItem key="navigationItem" title="Media Social Authentication" id="rNK-Pz-IT5"/>
+                    <connections>
+                        <outlet property="btnFacebookSignin" destination="WVm-fi-mDt" id="sGO-Gh-mG7"/>
+                        <outlet property="btnGoogleSignin" destination="r3r-th-a1b" id="7i9-BP-a9m"/>
+                        <outlet property="imgAvatar" destination="85j-ud-t6Q" id="Smi-Uk-eV5"/>
+                        <outlet property="lblProfile" destination="FKs-DY-khy" id="wDK-ts-kRF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

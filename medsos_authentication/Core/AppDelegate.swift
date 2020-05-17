@@ -37,9 +37,8 @@ extension AppDelegate: GIDSignInDelegate {
           } else {
             print("\(error.localizedDescription)")
           }
-          return
         }
-        print(user.debugDescription)
+        NotificationCenter.default.post(Notification(name: .GoogleSign, object: user, userInfo: nil))
     }
     
     @available(iOS 9.0, *)

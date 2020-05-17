@@ -17,10 +17,6 @@
 		97C128DA247111DE00386E29 /* medsos_authenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128D9247111DE00386E29 /* medsos_authenticationTests.swift */; };
 		97C128E5247111DE00386E29 /* medsos_authenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128E4247111DE00386E29 /* medsos_authenticationUITests.swift */; };
 		97C12910247112B600386E29 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128F7247112B500386E29 /* BaseViewController.swift */; };
-		97C12911247112B600386E29 /* FontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128F8247112B500386E29 /* FontConfig.swift */; };
-		97C12913247112B600386E29 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128FA247112B500386E29 /* BaseCollectionViewCell.swift */; };
-		97C12915247112B600386E29 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128FC247112B600386E29 /* BaseService.swift */; };
-		97C12916247112B600386E29 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C128FD247112B600386E29 /* BaseTableView.swift */; };
 		97C12917247112B600386E29 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12901247112B600386E29 /* UIViewExt.swift */; };
 		97C12918247112B600386E29 /* UITableViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12902247112B600386E29 /* UITableViewCellExt.swift */; };
 		97C12919247112B600386E29 /* UICollectionViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C12903247112B600386E29 /* UICollectionViewCellExt.swift */; };
@@ -30,9 +26,9 @@
 		97C1291E247112B600386E29 /* XIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1290A247112B600386E29 /* XIBView.swift */; };
 		97C1291F247112B600386E29 /* LoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1290B247112B600386E29 /* LoaderVC.swift */; };
 		97C12921247112B600386E29 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1290F247112B600386E29 /* BuildConfig.swift */; };
-		97C129262471141600386E29 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C129242471141600386E29 /* AuthenticationViewController.swift */; };
-		97C129272471141600386E29 /* AuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C129252471141600386E29 /* AuthenticationViewController.xib */; };
 		97C129292471166E00386E29 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C129282471166E00386E29 /* UIViewControllerExt.swift */; };
+		97C1292C2471260A00386E29 /* AuthNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1292B2471260A00386E29 /* AuthNotification.swift */; };
+		97C1292E2471392A00386E29 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1292D2471392A00386E29 /* AuthButton.swift */; };
 		A2D8A0D070317FB334AE43E4 /* Pods_medsos_authenticationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EB7C94310E06C75A2365BE /* Pods_medsos_authenticationTests.framework */; };
 		BE4221F2E2D05902FA178ACF /* Pods_medsos_authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C92A894D12BC1471B65F51F /* Pods_medsos_authentication.framework */; };
 /* End PBXBuildFile section */
@@ -73,10 +69,6 @@
 		97C128E4247111DE00386E29 /* medsos_authenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medsos_authenticationUITests.swift; sourceTree = "<group>"; };
 		97C128E6247111DE00386E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97C128F7247112B500386E29 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		97C128F8247112B500386E29 /* FontConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConfig.swift; sourceTree = "<group>"; };
-		97C128FA247112B500386E29 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		97C128FC247112B600386E29 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		97C128FD247112B600386E29 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		97C12901247112B600386E29 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		97C12902247112B600386E29 /* UITableViewCellExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExt.swift; sourceTree = "<group>"; };
 		97C12903247112B600386E29 /* UICollectionViewCellExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExt.swift; sourceTree = "<group>"; };
@@ -86,9 +78,9 @@
 		97C1290A247112B600386E29 /* XIBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBView.swift; sourceTree = "<group>"; };
 		97C1290B247112B600386E29 /* LoaderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderVC.swift; sourceTree = "<group>"; };
 		97C1290F247112B600386E29 /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
-		97C129242471141600386E29 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		97C129252471141600386E29 /* AuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationViewController.xib; sourceTree = "<group>"; };
 		97C129282471166E00386E29 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		97C1292B2471260A00386E29 /* AuthNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNotification.swift; sourceTree = "<group>"; };
+		97C1292D2471392A00386E29 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		AA255560091E05FF7DA20089 /* Pods-medsos_authentication-medsos_authenticationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medsos_authentication-medsos_authenticationUITests.release.xcconfig"; path = "Target Support Files/Pods-medsos_authentication-medsos_authenticationUITests/Pods-medsos_authentication-medsos_authenticationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B798F3D69EB7DCBB991BAC87 /* Pods-medsos_authentication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medsos_authentication.debug.xcconfig"; path = "Target Support Files/Pods-medsos_authentication/Pods-medsos_authentication.debug.xcconfig"; sourceTree = "<group>"; };
 		B89E8F7C5906BC1339E689A4 /* Pods-medsos_authentication-medsos_authenticationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medsos_authentication-medsos_authenticationUITests.debug.xcconfig"; path = "Target Support Files/Pods-medsos_authentication-medsos_authenticationUITests/Pods-medsos_authentication-medsos_authenticationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +182,7 @@
 			children = (
 				97C128F6247112B500386E29 /* Base */,
 				97C12923247112E900386E29 /* Config */,
+				97C1292A247125E400386E29 /* NotificationCenter */,
 				97C128FE247112B600386E29 /* Utilities */,
 				97C128C2247111D900386E29 /* AppDelegate.swift */,
 				97C128C4247111D900386E29 /* SceneDelegate.swift */,
@@ -204,8 +197,6 @@
 			children = (
 				97C128C6247111D900386E29 /* MainViewController.swift */,
 				97C128C8247111D900386E29 /* Main.storyboard */,
-				97C129242471141600386E29 /* AuthenticationViewController.swift */,
-				97C129252471141600386E29 /* AuthenticationViewController.xib */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -222,10 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				97C128F7247112B500386E29 /* BaseViewController.swift */,
-				97C128F8247112B500386E29 /* FontConfig.swift */,
-				97C128FA247112B500386E29 /* BaseCollectionViewCell.swift */,
-				97C128FC247112B600386E29 /* BaseService.swift */,
-				97C128FD247112B600386E29 /* BaseTableView.swift */,
+				97C1292D2471392A00386E29 /* AuthButton.swift */,
 			);
 			name = Base;
 			path = Base/Base;
@@ -277,6 +265,14 @@
 				97C1290F247112B600386E29 /* BuildConfig.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		97C1292A247125E400386E29 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				97C1292B2471260A00386E29 /* AuthNotification.swift */,
+			);
+			path = NotificationCenter;
 			sourceTree = "<group>";
 		};
 		F3C4F2A4E567C5DB3244B5B8 /* Pods */ = {
@@ -403,7 +399,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C129272471141600386E29 /* AuthenticationViewController.xib in Resources */,
 				97C128CF247111DE00386E29 /* LaunchScreen.storyboard in Resources */,
 				97C128CC247111DE00386E29 /* Assets.xcassets in Resources */,
 				97C128CA247111D900386E29 /* Main.storyboard in Resources */,
@@ -572,21 +567,18 @@
 				97C1291A247112B600386E29 /* UIImageViewExt.swift in Sources */,
 				97C1291D247112B600386E29 /* LoaderState.swift in Sources */,
 				97C1291F247112B600386E29 /* LoaderVC.swift in Sources */,
-				97C129262471141600386E29 /* AuthenticationViewController.swift in Sources */,
 				97C128C7247111D900386E29 /* MainViewController.swift in Sources */,
-				97C12913247112B600386E29 /* BaseCollectionViewCell.swift in Sources */,
 				97C12910247112B600386E29 /* BaseViewController.swift in Sources */,
-				97C12911247112B600386E29 /* FontConfig.swift in Sources */,
-				97C12916247112B600386E29 /* BaseTableView.swift in Sources */,
 				97C12919247112B600386E29 /* UICollectionViewCellExt.swift in Sources */,
 				97C1291E247112B600386E29 /* XIBView.swift in Sources */,
 				97C12918247112B600386E29 /* UITableViewCellExt.swift in Sources */,
+				97C1292E2471392A00386E29 /* AuthButton.swift in Sources */,
 				97C12917247112B600386E29 /* UIViewExt.swift in Sources */,
+				97C1292C2471260A00386E29 /* AuthNotification.swift in Sources */,
 				97C129292471166E00386E29 /* UIViewControllerExt.swift in Sources */,
 				97C128C3247111D900386E29 /* AppDelegate.swift in Sources */,
 				97C1291C247112B600386E29 /* AlertBuilder.swift in Sources */,
 				97C128C5247111D900386E29 /* SceneDelegate.swift in Sources */,
-				97C12915247112B600386E29 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
