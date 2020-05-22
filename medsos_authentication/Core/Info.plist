@@ -27,13 +27,13 @@
                 <!-- Google Config -->
 				<string>com.googleusercontent.apps.541820134663-4c66mkh90prqs1fd0td8jb6t4vaugv4k</string>
                 <!-- FACEBOOK Config -->
-                <string>fb2791723247773919</string>
+                <string>fb902310073583337</string>
 			</array>
 		</dict>
 	</array>
     <!-- FACEBOOK Config -->
     <key>FacebookAppID</key>
-    <string>2791723247773919</string>
+    <string>902310073583337</string>
     <key>FacebookDisplayName</key>
     <string>Medsos Authentication</string>
     

@@ -8,16 +8,31 @@
 
 import UIKit
 import GoogleSignIn
-import FBSDKCoreKit
 import FBSDKLoginKit
 
 class MainViewController: BaseViewController {
     @IBOutlet weak var btnGoogleSignin: AuthButton!
-    @IBOutlet weak var btnFacebookSignin: FBLoginButton!
+    @IBOutlet weak var btnFacebookSignin: AuthButton!
     @IBOutlet weak var lblProfile: UILabel!
     @IBOutlet weak var imgAvatar: UIImageView!
     
     private let manager = LoginManager()
+    private let FBPermission = ["fields":"""
+        id,
+        name,
+        email,
+        first_name,
+        last_name,
+        age_range,
+        link,
+        gender,
+        locale,
+        timezone,
+        picture,
+        updated_time,
+        verified
+        """
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +45,11 @@ class MainViewController: BaseViewController {
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
-        //btnFacebookSignin.delegate = self
         if AccessToken.isCurrentAccessTokenActive,
             let token = AccessToken.current,
             !token.isExpired {
             print(token.tokenString)
+            fetchUserProfile()
             btnFacebookSignin.setTitle("Logout", for: .normal)
         } else {
             btnFacebookSignin.setTitle("Facebook SignIn", for: .normal)
@@ -55,6 +70,7 @@ class MainViewController: BaseViewController {
     }
     
     private func setupUI() {
+        lblProfile.text = ""
         imgAvatar.layer.cornerRadius = imgAvatar.frame.height / 2
         imgAvatar.layer.borderColor = UIColor.black.cgColor
         imgAvatar.layer.borderWidth = 1
@@ -65,9 +81,7 @@ extension MainViewController {
     @IBAction func googleSignIn(_ sender: UIButton) {
         if sender.titleLabel?.text == "Logout" {
             GIDSignIn.sharedInstance().signOut()
-            lblProfile.text = ""
-            imgAvatar.image = nil
-            sender.setTitle("Google SignIn", for: .normal)
+            logout(sender, "Google SignIn")
         } else {
             GIDSignIn.sharedInstance().signIn()
         }
@@ -76,20 +90,20 @@ extension MainViewController {
     @IBAction func facebookSignIn(_ sender: UIButton) {
         if sender.titleLabel?.text == "Logout" {
             manager.logOut()
-            sender.setTitle("Facebook SignIn", for: .normal)
+            logout(sender, "Facebook SignIn")
         } else {
-            manager.logIn(permissions: ["public_profile", "email"], from: self) { result, error in
-                guard let _ = error else { return }
-                if result?.isCancelled == true {
-                    print("Cancel")
-                } else {
-                    print(result?.token?.appID)
-                    print(result?.token?.tokenString)
-                    print(result?.token?.expirationDate)
-                    sender.setTitle("Logout", for: .normal)
-                }
+            manager.logIn(permissions: [], from: self) { result, error in
+                if let _ = error { return }
+                sender.setTitle("Logout", for: .normal)
+                self.facebookSigInHandling(result)
             }
         }
+    }
+    
+    private func logout(_ button: UIButton, _ title: String) {
+        lblProfile.text = ""
+        imgAvatar.image = nil
+        button.setTitle(title, for: .normal)
     }
 }
 
@@ -110,14 +124,36 @@ extension MainViewController {
         print("idToken    : \(data.authentication.idToken ?? "")")
         print("refreshToken: \(data.authentication.refreshToken ?? "")")
     }
-}
-
-extension MainViewController : LoginButtonDelegate {
-    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        print("Login")
+    
+    private func facebookSigInHandling(_ result: LoginManagerLoginResult?) {
+        if result?.isCancelled == true {
+            print("Cancel")
+        } else {
+            print(result?.token?.appID)
+            print(result?.token?.tokenString)
+            print(result?.token?.expirationDate)
+            self.fetchUserProfile()
+        }
     }
     
-    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-        print("Logout")
+    private func fetchUserProfile() {
+        let connection = GraphRequestConnection()
+        connection.add(GraphRequest(graphPath: "me", parameters: FBPermission)) { httpResponse, result, error   in
+            if let _ = error { return }
+            // Handle vars
+            if let json = result as? [String: Any] {
+                json.forEach { key, value in
+                    if key == "picture",
+                        let picture = value as? [String: Any] ,
+                        let data = picture["data"] as? [String: Any],
+                        let url = data["url"] as? String {
+                        self.imgAvatar.load(fromUrl: url)
+                    } else {
+                        self.lblProfile.text?.append("\(key):\(value)\n")
+                    }
+                }
+            }
+        }
+        connection.start()
     }
 }
