@@ -21,7 +21,7 @@ class AuthButton : UIButton {
     }
     
     private func setupView() {
-        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderColor = UIColor.black.cgColor
         self.layer.borderWidth = 1
         self.layer.cornerRadius = self.frame.height * 0.1
     }

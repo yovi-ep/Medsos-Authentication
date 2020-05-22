@@ -8,14 +8,23 @@
 
 import UIKit
 import GoogleSignIn
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.setupGoogleSignIn()
+        self.setupFacebook(application, launchOptions)
         return true
     }
-
+    
+    @available(iOS 9.0, *)
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        setupFacebookURL(app, url, options)
+        setupGoogleSingInURL(url)
+        return true
+    }
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
@@ -24,10 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+/* Google SignIn Config */
 extension AppDelegate: GIDSignInDelegate {
     private func setupGoogleSignIn() {
         GIDSignIn.sharedInstance().clientID = BuildConfig.get(key: .GoogleSignInClientID)
         GIDSignIn.sharedInstance().delegate = self
+    }
+    
+    private func setupGoogleSingInURL(_ url: URL) {
+        GIDSignIn.sharedInstance().handle(url)
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
@@ -40,9 +54,23 @@ extension AppDelegate: GIDSignInDelegate {
         }
         NotificationCenter.default.post(Notification(name: .GoogleSign, object: user, userInfo: nil))
     }
+}
+
+/* Facebook Config */
+extension AppDelegate {
+    private func setupFacebook(_ application: UIApplication, _ options: [UIApplication.LaunchOptionsKey: Any]?) {
+        ApplicationDelegate.shared.application(
+            application,
+            didFinishLaunchingWithOptions: options
+        )
+    }
     
-    @available(iOS 9.0, *)
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
-      return GIDSignIn.sharedInstance().handle(url)
+    private func setupFacebookURL(_ app: UIApplication, _ url: URL, _ options: [UIApplication.OpenURLOptionsKey : Any]) {
+        ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+            annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+        )
     }
 }
